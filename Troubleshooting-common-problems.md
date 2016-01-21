@@ -1,4 +1,4 @@
-[Checksum mismatch :/ try again]
+#Checksum mismatch :/ try again
 
 One of the most common errors is when your "package" or "formulas" that tell crew where to find what you're trying to install is not up to date.
 
@@ -10,7 +10,7 @@ one of the easiest way to fix this is simply to type:
 
 crew update 
 
-[it's not upgrading]
+#it's not upgrading
 Another common mistake is mistaking update and upgrade (read that again if you think I typed the same word twice)
 
 crew update 
