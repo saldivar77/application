@@ -1,4 +1,34 @@
-# Creating a package
+# Creating a package installed from source
+
+0. Create an empty file in `/usr/local/lib/crew/packages` with a `.rb` extension. If you wan't to add a recipe for a package called patch, name the file `patch.rb`.
+
+1. Update the content of the file to conform with the following template:
+```ruby
+require 'package'
+
+class Patch < Package # The name of the package
+  version '2.7' # The current version of the package
+  source_url 'http://ftp.gnu.org/gnu/patch/patch-2.7.tar.gz' # The source files for the package
+  source_sha1 '8886fe94a4cefaf42678ebeca25f4c012bd0f5dc'
+
+  def self.build
+    system './configure --prefix=/usr/local' # the steps required to build the package
+    system "make"
+  end
+
+  def self.install
+    system "make", "DESTDIR=#{CREW_DEST_DIR}", "install" # the steps required to install the package
+  end
+end
+```
+
+2. Try your recipe via `crew install *name of package*`, e.g. `crew install patch`.
+
+3. Ensure your package was successfully installed.
+
+4. Create a pull request.
+
+# Creating a binary package
 In this tutorial we will compile a package for chromebrew, we will be using [Make](https://www.gnu.org/software/make/) as an example.
 
 0. Make a `src` directory and enter it
@@ -69,4 +99,4 @@ In this tutorial we will compile a package for chromebrew, we will be using [Mak
       end         
     end
 
-10. Now create a pull request for your packagename.rb and your done.
+10. Now create a pull request for your packagename.rb and you are done.
