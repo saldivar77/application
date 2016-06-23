@@ -6,9 +6,9 @@
 ```ruby
 require 'package'
 
-class Patch < Package # The name of the package
-  version '2.7' # The current version of the package
-  source_url 'http://ftp.gnu.org/gnu/patch/patch-2.7.tar.gz' # The source files for the package
+class Patch < Package # the name of the package
+  version '2.7' # the current version of the package
+  source_url 'http://ftp.gnu.org/gnu/patch/patch-2.7.tar.gz' # the source files for the package
   source_sha1 '8886fe94a4cefaf42678ebeca25f4c012bd0f5dc'
 
   def self.build
