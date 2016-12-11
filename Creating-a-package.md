@@ -98,5 +98,5 @@ In this tutorial we will compile a package for chromebrew, we will be using [Mak
         system "make", "DESTDIR=#{CREW_DEST_DIR}", "install"          # remember to include DESTDIR set to CREW_DEST_DIR - needed to keep track of changes made to system
       end         
     end
-
-10. Now create a pull request for your packagename.rb and you are done.
+```
+11. Now create a pull request for your packagename.rb and you are done.
