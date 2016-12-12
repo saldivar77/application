@@ -2,7 +2,7 @@
 
 One of the most common errors is when your "package" or "formulas" that tell crew where to find what you're trying to install is not up to date.
 
-A common error is "Checksum mismatch :/ try again"
+A common error is ```Checksum mismatch :/ try again```
 
 usually it means that the line above shows it had trouble downloading the package you are trying to see.
 
@@ -21,3 +21,7 @@ NOTE: you are not UPGRADING any of the packages. if there's new version of ruby 
 crew upgrade ruby 
 
 and you'll get a new version of ruby if the "update" got you a new "formula". Try it now and see.
+
+#If none of this helps:
+
+[Search the issues](https://github.com/skycocker/chromebrew/issues/) for the package name you are having trouble with. If nothing is returned or none of the fixes work [submit an issue](https://github.com/skycocker/chromebrew/issues/new) stating the package name and the error
