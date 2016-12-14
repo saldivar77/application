@@ -61,7 +61,7 @@ In this tutorial we will compile a package for chromebrew, we will be using [Mak
 
         $ make install DESTDIR=~/Downloads/make-4.1
 
-7. Go to DESTDIR and run create_package.sh
+7. Go to DESTDIR and run [create_package.sh](https://raw.githubusercontent.com/skycocker/chromebrew/master/create_package.sh)
 
         $ cd ~/Downloads/make-4.1-chromebrew && wget https://raw.githubusercontent.com/Kriskras99/chromebrew/5ff7b09430390937bc49ffb32a2c1a5b6563113f/create_package.sh
         $ sh create_package.sh
