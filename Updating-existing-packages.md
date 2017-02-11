@@ -1,0 +1,1 @@
+[package version checker script](https://gist.github.com/cstrouse/e1660f256e2a22700687ac743e136a71)
