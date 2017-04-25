@@ -1,6 +1,6 @@
 # Creating a package installed from source
 
-0. Create an empty file in `/usr/local/lib/crew/packages` with a `.rb` extension. If you wan't to add a recipe for a package called patch, name the file `patch.rb`.
+0. Create an empty file in `/usr/local/lib/crew/packages` with a `.rb` extension. If you want to add a recipe for a package called patch, name the file `patch.rb`.
 
 1. Update the content of the file to conform with the following template:
 ```ruby
