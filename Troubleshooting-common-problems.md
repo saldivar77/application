@@ -1,4 +1,4 @@
-#3 Checksum mismatch. :/ Try again.
+## Checksum mismatch. :/ Try again.
 
 One of the most common errors is when your "package" or "formulas" that tell crew where to find what you're trying to install is not up to date.
 
