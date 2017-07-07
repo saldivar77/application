@@ -1,4 +1,4 @@
-# Checksum mismatch. :/ Try again.
+#3 Checksum mismatch. :/ Try again.
 
 One of the most common errors is when your "package" or "formulas" that tell crew where to find what you're trying to install is not up to date.
 
@@ -10,7 +10,7 @@ One of the easiest way to fix this is simply to type:
 
 `crew update`
 
-# It's not upgrading
+## It's not upgrading
 Another common mistake is not understanding the difference between update and upgrade (read that again if you think I typed the same word twice).
 
 `crew update` 
@@ -22,6 +22,6 @@ NOTE: You are not _UPGRADING_ any of the packages. If there's new version of rub
 
 and you'll get a new version of ruby if the "update" got you a new "formula". Try it now and see.
 
-# If none of this helps:
+## If none of this helps:
 
 [Search the issues](https://github.com/skycocker/chromebrew/issues/) for the package name you are having trouble with. If nothing is found or none of the fixes work, [submit an issue](https://github.com/skycocker/chromebrew/issues/new) stating the package name and the error.
