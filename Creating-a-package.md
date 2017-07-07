@@ -78,6 +78,8 @@ In this tutorial we will compile a package for chromebrew, we will be using [Mak
     require 'package'
 
     class Make < Package # the package name
+      description 'GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program\'s source files.'
+      homepage 'https://www.gnu.org/software/make/'
       version '4.1' # the package version
 
       binary_url ({
