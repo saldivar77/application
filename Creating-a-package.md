@@ -1,8 +1,8 @@
-# Creating a package installed from source
+## Creating a package installed from source
 
-0. Create an empty file in `/usr/local/lib/crew/packages` with a `.rb` extension. If you want to add a recipe for a package called patch, name the file `patch.rb`.
+1. Create an empty file in `/usr/local/lib/crew/packages` with a `.rb` extension. If you want to add a recipe for a package called patch, name the file `patch.rb`.
 
-1. Update the content of the file to conform with the following template:
+2. Update the content of the file to conform with the following template:
 ```ruby
 require 'package'
 
@@ -28,52 +28,52 @@ class Patch < Package # the name of the package
 end
 ```
 
-2. Try your recipe via `crew install *name of package*`, e.g. `crew install patch`.
+3. Try your recipe via `crew install *name of package*`, e.g. `crew install patch`.
 
-3. Ensure your package was successfully installed.
+4. Ensure your package was successfully installed.
 
-4. Create a pull request.
+5. Create a pull request.
 
 # Creating a binary package
 In this tutorial we will compile a package for chromebrew, we will be using [Make](https://www.gnu.org/software/make/) as an example.
 
-0. Make a `src` directory and enter it
+1. Make a `src` directory and enter it
 
         $ mkdir ~/src && cd ~/src
 
-1. Download the source package and extract it
+2. Download the source package and extract it
 
         $ wget ftp://ftp.gnu.org/gnu/make/make-4.1.tar.bz2 && tar -xf make-4.1.tar.bz2
 
-2. **Always** read the `README` and the `INSTALL`
+3. **Always** read the `README` and the `INSTALL`
 
         $ cd make-4.1
         $ nano README
         $ nano INSTALL
 
-3. Install the build dependencies
+4. Install the build dependencies
 
         $ sudo crew install buildessential
 
-4. Run configure with `--prefix=/usr/local` and any other flags you deem necessary
+5. Run configure with `--prefix=/usr/local` and any other flags you deem necessary
 
         $ ./configure --prefix=/usr/local 
 
-5. Compile it, use the `-j` flag to let make use more threads. If compilation fails try again without the `-j` flags.
+6. Compile it, use the `-j` flag to let make use more threads. If compilation fails try again without the `-j` flags.
 
         $ make -j4
 
-6. Install it to a directory where you can easily find all the files, /usr/local had a lot of other files too.
+7. Install it to a directory where you can easily find all the files, /usr/local had a lot of other files too.
 
         $ make install DESTDIR=~/Downloads/make-4.1
 
-7. Go to DESTDIR and run [create_package.sh](https://raw.githubusercontent.com/skycocker/chromebrew/master/create_package.sh)
+8. Go to DESTDIR and run [create_package.sh](https://raw.githubusercontent.com/skycocker/chromebrew/master/create_package.sh)
 
         $ cd ~/Downloads/make-4.1-chromebrew && wget https://raw.githubusercontent.com/Kriskras99/chromebrew/5ff7b09430390937bc49ffb32a2c1a5b6563113f/create_package.sh
         $ sh create_package.sh
 
-8. There will be a .tar.gz with the name of the DESTDIR directory, upload it to dropbox or any other file sharing site that supports the use of `wget`
-9. Then you need to create the packagename.rb, replace packagename with the name of your package.
+9. There will be a .tar.gz with the name of the DESTDIR directory, upload it to dropbox or any other file sharing site that supports the use of `wget`
+10. Then you need to create the packagename.rb, replace packagename with the name of your package.
     ```ruby
     require 'package'
 
