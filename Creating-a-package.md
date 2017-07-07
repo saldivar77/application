@@ -7,9 +7,11 @@
 require 'package'
 
 class Patch < Package # the name of the package
-  version '2.7' # the current version of the package
-  source_url 'http://ftp.gnu.org/gnu/patch/patch-2.7.tar.gz' # the source files for the package
-  source_sha1 '8886fe94a4cefaf42678ebeca25f4c012bd0f5dc'
+  description 'Patch takes a patch file containing a difference listing produced by the diff program and applies those differences to one or more original files, producing patched versions.'
+  homepage 'http://savannah.gnu.org/projects/patch/'
+  version '2.7.5'
+  source_url 'https://ftp.gnu.org/gnu/patch/patch-2.7.5.tar.xz'
+  source_sha256 'fd95153655d6b95567e623843a0e77b81612d502ecf78a489a4aed7867caa299'
 
   def self.build
     system './configure --prefix=/usr/local' # the steps required to build the package
@@ -18,6 +20,10 @@ class Patch < Package # the name of the package
 
   def self.install
     system "make", "DESTDIR=#{CREW_DEST_DIR}", "install" # the steps required to install the package
+  end
+
+  def self.check
+    system "make", "check" # the steps required to check the package
   end
 end
 ```
