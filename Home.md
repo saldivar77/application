@@ -1,6 +1,6 @@
-#Welcome to the chromebrew wiki!
+## Welcome to the chromebrew wiki!
 
-List of wiki pages
+### List of wiki pages
 * [How to create a package](https://github.com/skycocker/chromebrew/wiki/Creating-a-package)
 * [Troubleshooting common problems](https://github.com/skycocker/chromebrew/wiki/Troubleshooting-common-problems)
 
