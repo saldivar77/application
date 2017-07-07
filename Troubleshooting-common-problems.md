@@ -6,7 +6,7 @@ A common error is ```Checksum mismatch. :/ Try again.```
 
 Usually it means that the line above shows it had trouble downloading the package you are trying to install.
 
-One of the easiest way to fix this is simply to type:
+One of the easiest ways to fix this is simply to type:
 
 `crew update`
 
