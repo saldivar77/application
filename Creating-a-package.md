@@ -34,7 +34,7 @@ end
 
 5. Create a pull request.
 
-# Creating a binary package
+## Creating a binary package
 In this tutorial we will compile a package for chromebrew, we will be using [Make](https://www.gnu.org/software/make/) as an example.
 
 1. Make a `src` directory and enter it
