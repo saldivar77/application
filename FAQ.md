@@ -1,6 +1,6 @@
-> Q: How do I display the Chrome OS version from the shell?
+- Q: How do I display the Chrome OS version from the shell?
 
-> A: `crew install lsb_release` and then enter `lsb_release -a`.  Alternatively, you could enter `cat /etc/lsb-release`.
+- A: `crew install lsb_release` and then enter `lsb_release -a`.  Alternatively, you could enter `cat /etc/lsb-release`.
 ***
 > Q: How do I find my hardware specs?
 
