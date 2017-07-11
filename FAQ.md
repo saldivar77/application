@@ -13,3 +13,8 @@ A: `uname -m`
 Q: How do I update all packages without getting prompted for dependencies each time?
 
 A: `yes | crew upgrade`
+***
+Q: How do I get man pages working?
+
+A: `crew install mandb` followed by `mandb -c`.  You will also need to set some environment variables as explained in blue text.
+***
