@@ -18,3 +18,7 @@ Q: How do I get man pages working?
 
 A: `crew install mandb` followed by `mandb -c`.  You will also need to set some environment variables as explained in blue text.
 ***
+Q: What does `configure: error: C preprocessor "/lib/cpp" fails sanity check` mean?
+
+A: `crew install make` or `crew install buildessential` will solve your problem.
+***
