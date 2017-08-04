@@ -22,3 +22,11 @@ Q: What does `configure: error: C preprocessor "/lib/cpp" fails sanity check` me
 
 A: `crew install make` or `crew install buildessential` will solve your problem.
 ***
+Q: How can I force update my Chromebook to the latest version?
+
+A: See http://www.thegeekstuff.com/2017/08/chrome-os-update-to-latest-version/.
+***
+Q: Where can I find information about keyboard shortcuts?
+
+A: See http://www.thegeekstuff.com/2016/04/chromebook-keyboard-shortcuts/.
+***
