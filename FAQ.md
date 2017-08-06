@@ -32,4 +32,4 @@ A: See http://www.thegeekstuff.com/2016/04/chromebook-keyboard-shortcuts/.
 ***
 Q: A Chromebrew package is not available for the software I need.  What can I do?
 
-A: Before you attempt to add a new package, consider there are many apps installable via npm, pip or composer.  A fairly comprehesive list of command-line apps can be found [here](https://stackify.com/top-command-line-tools/).
+A: Before you attempt to add a new package, consider there are many apps installable via gem, npm, pip or composer.  A fairly comprehesive list of command-line apps can be found [here](https://stackify.com/top-command-line-tools/).
