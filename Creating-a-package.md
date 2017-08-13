@@ -31,7 +31,7 @@ class Bc < Package                 # The first character of the class name must 
   end
 end
 ```
-3. Usually, use "--prefix=/usr/local" on configure and "DESTDIR=#{CREW_DEST_DIR}" on install to make sure everything ends up in the correct place.
+3. Use "--prefix=#{CREW_PREFIX}" on configure and "DESTDIR=#{CREW_DEST_DIR}" on install to make sure everything ends up in the correct place.
 
 4. Try your recipe via `crew install pkgname`, e.g. `crew install bc`.
 
@@ -41,7 +41,7 @@ end
 
 ## Adding a pre-compiled binary
 
-To add a pre-compiled binary file to you new package or to an existing one, you must first create a source-only package like above if it does not exist. After that:
+To add a pre-compiled binary file to your new package or to an existing one, you must first create a source-only package like above if it does not exist. After that:
 
 1. Use `crew build pkgname`, e.g. `crew build bc`. 
 
@@ -49,7 +49,7 @@ To add a pre-compiled binary file to you new package or to an existing one, you 
 
 3. Upload the .tar.xz file to any file sharing site that supports the use of `wget`. For now, the recommended approach is to create a release in your chromebrew fork and upload it in the release files.
 
-4. Modify the package .rb to add the pre-compiled binaries an their checksums.
+4. Modify the package .rb to add the pre-compiled binaries and their checksums.
 
 ```ruby
 require 'package'
@@ -74,6 +74,6 @@ class Bc < Package
 end
 ```
 
-5. Make sure to add to the correct architecture. In the example we used x86_64, but it may be others (its name will be on the .tar.xz file). There may be more than one type of pre-compiled binaries, each for a different architecture.
+5. Make sure to add to the correct architecture. In the example, we used x86_64, but it could also be i686, armv7l or aarch64 (the name will be included in the .tar.xz filename). There may be more than one type of pre-compiled binary; each for a different architecture.
 
 6. Create a pull request to submit the changes.
